@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:white;
+}
+.w3-top {
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+
+}
+.dropdown-content {
+  display: none;
+  position:fixed;
+  background-color: #1D1919;
+  width: auto;
+  height:auto;
+}
+
+.dropdown-content .header {
+  background: white;
+  padding: 16px;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 170px;
+  padding: 10px;
+  background-color:#1D1919;
+  height: auto;
+}
+
+.column a {
+  float: none;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color:#060606;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}

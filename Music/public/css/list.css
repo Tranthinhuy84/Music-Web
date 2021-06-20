@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+			.w3-quarter{
+    overflow: hidden; /** DÒNG BẮT BUỘC CÓ **/
+    position: relative;
+}
+a:hover, a:visited, a:link, a:active {
+
+    text-decoration: none!important;
+
+}
+.sub-container{
+	margin: 0 auto;
+	width: 1200px;
+	height:auto;
+}
+input {
+  outline: none;
+}
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; 
+}
+
+
+input[type=search] {
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 220px;
+  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+input[type=search]:focus {
+  width: 350px;
+  background-color: #fff;
+  border-color: #66CC75;
+  
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+  color: #999;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+footer{
+	background-color: #8DB5CB;
+}
+body {margin:0;}
+.top{
+  list-style-type: none;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #8DB5CB;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index:100;
+}
+.logo{
+  width:100%;
+  border-bottom: 1px solid #ffffff;
+  list-style-type: none;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+  z-index:100;
+}
+.logo li a{
+	font-size:24px;
+	padding:12px 12px;
+}
+.navigate{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index:100;
+	
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index:100;
+  margin-bottom:0px!important;
+}
+
+li {
+  float: left;
+}
+
+li a{
+  display: block;
+  color: black;
+	font-weight:600;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li button{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color:#8DB5CB;
+  border:none;
+  font-weight:600;
+
+}
+
+li a:hover:not(.active) {
+  background-color:#4E8BAC;
+	color:white;
+}
+
+li button:hover:not(.active) {
+  background-color: #4E8BAC;
+	color:white;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+h4{
+	color:white;
+}
+.body{
+	margin-top:40px;
+	height:100%;
+	width:100%;
+	background-color: #A0C1D3;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:white;
+}
+.w3-top {
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+
+}
+.dropdown-content {
+  display: none;
+  position:fixed;
+  background-color: #1D1919;
+  width: auto;
+  height:auto;
+}
+
+.dropdown-content .header {
+  background: white;
+  padding: 16px;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 170px;
+  padding: 10px;
+  background-color:#1D1919;
+  height: auto;
+}
+
+ .dropdown-content .row .column a {
+  float: none;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+ .dropdown-content .row .column a:hover {
+  background-color:#060606!important;
+	color:white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.row-top{
+  display: flex;
+	background-image:url("../Hình/nhac1.jpg")
+}
+
+/* Create two equal columns that sits next to each other */
+.column-top {
+  flex: 50%;
+  border:none;
+  padding: 10px;
+  height: 300px;
+  color:white;
+}
+.column-top img{
+	height:250px;
+	width:250px;
+	border-radius:50%;
+	
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.container{
+    height:auto;
+    width:1100px;
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    margin-top:10px;
+    margin:0 auto;
+}
+.single-square{
+    width: 19%;
+    height:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    margin-left:10px;
+	box-sizing:border-box;
+	overflow: hidden;
+	margin-top:10px;
+   
+}
+.single-square img{
+    height:150px;
+    width:100%;
+	box-sizing:border-box;
+	transition:1s;
+}
+.single-square p{
+    font-size:14px;
+    margin-top:0px ;
+    margin-bottom:0px ;
+	color:black;
+}
+
+.single-square:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+	/*background-color:rgba(0,0,0,0.5);*/
+}
+
+.img-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:none;
+  color: black;
+  display: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.hinh_anh{
+	width:100%;
+	height:150px;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+.single-square :hover .img-btn{
+	display:block;
+}
+	
+	
